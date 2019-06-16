@@ -1,0 +1,252 @@
+html,body,h1,h2,h3,h4,h5,h6,p,div,ul,li,a,section,article,img,span,figure {
+  margin:0;padding:0;
+}
+* {box-sizing:border-box;}
+.mainHeader {
+  background:skyblue;color:white;
+  padding:3vh; 
+  width:100%;
+  display:flex;flex-flow:row;justify-content:space-between;align-items:center;  
+}
+.mainHeaderBranding {
+  display:flex;flex-flow:row wrap;align-items:center;
+}
+.mainHeaderTitle {
+  margin:0 3vh;
+}
+.mainHeaderMenu {
+  text-align:right;
+  padding:0 2vh;
+}
+.mainHeaderMenu a {
+  color:rgba(50,150,220,1);
+  text-transform:uppercase;
+  font-size:1.5vh;
+  letter-spacing:0.2vh;
+  font-weight:500;
+  text-decoration:none;
+  text-shadow:2px 1px 1px rgba(255,255,255,0.4);
+  transition:color 0.4s ease-in-out;
+}
+.mainHeaderMenu a:hover {
+  color:rgba(50,50,50,1);
+}
+.contentContainer {
+  display:flex;flex-flow:row wrap;justify-content:space-around;align-items:start;
+}
+.titleBar {
+  padding:2vh;
+  border-bottom:1px solid white;
+  width:100%;
+  text-align:center;
+  margin-bottom:2vh;  
+}
+.title {
+  color:skyblue;
+}
+.actionItem {
+  background:rgba(100,200,50,1);
+  border:none;
+  padding:2vh 4vh;
+  color:white;
+  font-weight:bold;
+  font-size:3vh;
+  margin:2vh 0;
+  text-transform:uppercase;
+  transition:background 0.4s ease-in-out;
+}
+.actionItem:hover {
+  background:rgba(20,255,50,1);
+  cursor:pointer;
+}
+.room {
+  background:skyblue;
+  width:35%;
+  padding:8vh;
+  border-radius:2vh;
+}
+.room a {
+  text-decoration:none;color:white;
+  font-size:3vh;
+}
+.room h3 {
+  text-align:center;
+}
+.room p {
+  font-size:1.6vh;
+  font-style:italic;
+  padding:2vh 0;
+}
+
+.optionsMenu {
+  display:flex;flex-flow:column wrap;justify-content:center;align-items:center;
+}
+.optionsMenu form {}
+.optionsMenu a {}
+.button {
+  border:none;
+  padding:4vh 2vh;
+  border-radius:0.5vh;
+  width:30vh;
+  font-size:2vh;
+  margin:2vh auto;
+}
+.is-Normal {
+  background:rgba(100,100,150,1);
+  color:white;
+  transition:background 0.4s ease-in-out;
+}
+.is-Danger {
+  background:rgba(255,150,50,1);
+  color:white;
+  transition:background 0.4s ease-in-out;
+}
+.is-Normal:hover {
+  background:rgba(100,100,100,1);
+  cursor:pointer;
+}
+.is-Danger:hover {
+  background:rgba(255,50,50,1);
+  cursor:pointer;
+}
+.editForm {
+  background:skyblue;
+  display:flex;flex-flow:column wrap;
+  padding:8vh 6vh;
+}
+.editForm label {
+  color:white;
+  text-align:center;
+  font-weight:bold;
+  text-transform:uppercase;
+}
+.editForm input, .editForm textarea {
+  margin:2vh 0;
+}
+.editForm input {
+  margin-bottom:6vh;
+}
+.editForm button {
+  margin:2vh 0;
+  padding:4vh;
+  background:rgba(220,220,250,1);
+  border:none;
+  color:rgba(50,50,50,1);
+  text-transform:uppercase;
+  transition:all 0.4s ease-in-out;
+}
+.editForm button:hover {
+  cursor:pointer;
+  background:rgba(20,200,50,1);
+  color:white;
+}
+.editForm a {
+  color:white;
+  text-decoration:none;
+}
+.contentDevice {
+  background:skyblue;
+  width:70%;
+  margin:2vh auto;
+  display:flex;flex-flow:row wrap;justify-content:space-around;
+}
+.contentDevice h3 {
+  color:white;
+  text-transform:uppercase;
+  text-align:center;
+  padding:3vh 0 0 0;
+  font-size:3vh;
+  width:100%;
+}
+.contentDevice p {
+  color:white;
+  text-align:center;
+  padding:0 0 2vh 0;
+  font-size:1.5vh;
+  width:100%;
+}
+.contentDevice .optionsMenu {
+  display:flex;flex-flow:row wrap;justify-content:space-around;
+  padding-bottom:2vh;
+  width:100%;
+}
+.editButton, .deleteButton {
+  border:none;
+  display:inline-block;
+  width:20vh;
+  padding:2vh 0;
+  margin:0.2vh 0;
+  transition:all 0.4s ease-in-out;
+  cursor:pointer;
+}
+.editButton:hover {
+  background:green;
+  color:white;
+}
+.deleteButton:hover {
+  background:red;
+  color:white;
+}
+.deviceInfo, .sensorInfo {
+  width:100%;
+  display:flex;flex-flow:row wrap;justify-content:space-around;
+}
+.deviceInfoDevice, .sensorInfoSensor {
+  background:grey;
+  margin:1vh;
+  padding:2vh;
+}
+.deviceInfoDevice p:nth-of-type(1),
+.sensorInfoSensor p:nth-of-type(1){
+  text-transform:uppercase;
+  font-weight:bold;
+  font-size:2vh;
+}
+.deviceInfoDevice p:nth-of-type(3),
+.deviceInfoDevice p:nth-of-type(4),
+.deviceInfoDevice p:nth-of-type(5),
+.sensorInfoSensor p:nth-of-type(3),
+.sensorInfoSensor p:nth-of-type(4),
+.sensorInfoSensor p:nth-of-type(5) {
+  background:white;
+  color:skyblue;
+  padding:1vh;
+  margin:0.3vh auto;
+  width:10vh;
+}
+
+.contentAddItem {
+  background:rgba(50,50,50,1);
+  width:100%;
+  display:flex;
+  flex-flow:row wrap;
+  justify-content:space-around;
+  align-items:center;
+  padding:2vh;
+}
+.addLamp, .addSensor {
+  width:40%;
+  background:white;
+  text-align:center;
+  padding:2vh;
+}
+.addLamp h3,
+.addSensor h3 {
+  color:skyblue;
+  font-size:2vh;
+  padding-bottom:2vh;
+}
+.addLamp input,
+.addSensor input,
+.addLamp textarea,
+.addSensor textarea {
+  width:90%;
+  margin-bottom:2vh;
+}
+.addLamp button,
+.addSensor button {
+  background:rgba(100,100,100,1);
+  color:white;
+  padding:1vh;
+  border:none;
+}
