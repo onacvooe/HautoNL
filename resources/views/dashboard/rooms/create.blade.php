@@ -4,7 +4,7 @@
 		<div class="titleBar">
 			<h1 class="title">Kamer aanmaken</h1>
 		</div>
-		<form class="editForm" method="POST" action="/dashboard/rooms">
+		<form class="editForm" method="POST" action="/dashboard">
 			@csrf			
 			<input type="text" name="title" placeholder="Kamer naam" required value="{{ old('title') }}">
 			<textarea name="description" placeholder="Kamer beschrijving" required>{{ old('description') }}</textarea>

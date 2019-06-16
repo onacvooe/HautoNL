@@ -36,7 +36,7 @@ class RoomsController extends Controller
         ]);
     	//return request()->all(); Alle informatie terugkrijgen van DB
     	Room::create($attributes);
-     	return redirect('/dashboard/rooms');
+     	return redirect('/dashboard');
     } 
 
 
@@ -55,14 +55,14 @@ class RoomsController extends Controller
         ]);
         //return request()->all(); Alle informatie terugkrijgen van DB
     	$room->update(request(['title', 'description']));
-    	return redirect('/dashboard/rooms');
+    	return redirect('/dashboard');
     } 
 
 
     public function destroy(Room $room)
     {
     	$room->delete();
-    	return redirect('/dashboard/rooms');
+    	return redirect('/dashboard');
 
     } 
 
